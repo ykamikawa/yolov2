@@ -110,7 +110,7 @@ if __name__ == '__main__':
         '-o',
         '--output',
         default="./outputs/",
-        help='path to output dirctory (mp4 format)')
+        help='path to output directory (mp4 format)')
     # GPU id
     argparser.add_argument(
         '-g',
