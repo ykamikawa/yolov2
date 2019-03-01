@@ -176,7 +176,7 @@ class YOLO(object):
         best_ious = tf.reduce_max(iou_scores, axis=4)
         conf_mask = conf_mask + tf.to_float(best_ious < 0.6) * (1 - y_true[..., 4]) * self.no_object_scale
 
-        # penalize the confidence of the boxes, which are reponsible for corresponding ground truth box
+        # penalize the confidence of the boxes, which are responsible for corresponding ground truth box
         conf_mask = conf_mask + y_true[..., 4] * self.object_scale
 
         ### class mask: simply the position of the ground truth boxes (the predictors)
