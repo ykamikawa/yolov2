@@ -348,7 +348,7 @@ class YOLO(object):
                     valid_imgs,     # the list of images used to validate the model
                     train_times,    # the number of time to repeat the training set, often used for small datasets
                     valid_times,    # the number of times to repeat the validation set, often used for small datasets
-                    nb_epoch,       # number of epoches
+                    nb_epoch,       # number of epochs
                     learning_rate,  # the learning rate
                     batch_size,     # the size of the batch
                     warmup_bs,      # number of initial batches to let the model familiarize with the new dataset
