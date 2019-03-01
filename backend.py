@@ -42,7 +42,7 @@ class FullYoloFeature(BaseFeatureExtractor):
     def __init__(self, input_size):
         input_image = Input(shape=(input_size, input_size, 3))
 
-        # the function to implement the orgnization layer (thanks to github.com/allanzelener/YAD2K)
+        # the function to implement the organization layer (thanks to github.com/allanzelener/YAD2K)
         def space_to_depth_x2(x):
             return tf.space_to_depth(x, block_size=2)
 
